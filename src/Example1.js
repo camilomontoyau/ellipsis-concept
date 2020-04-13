@@ -21,7 +21,9 @@ const Example1 = () => {
     <div>
       <h1>example 1</h1>
       <p>The example1 needs to have this in consideration 
+        <br/>
         <a href="https://material-ui.com/components/menus/#limitations">Warning at Material UI</a>
+        <br/>
         <a href="https://bugs.chromium.org/p/chromium/issues/detail?id=327437">Flexbox Ellipsis bug</a>
       </p>
       <Paper className={classes.root}>
