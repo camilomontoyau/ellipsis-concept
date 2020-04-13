@@ -12,7 +12,7 @@ const Example5 = () => {
   return (
     <div>
       <h1>example 5</h1>
-      <p></p>
+      <p>Using dotdotdot outside html ul li </p>
       <div style={{ maxWidth: "400px" }}>
         <Dotdotdot clamp={2}>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac
