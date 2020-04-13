@@ -15,12 +15,11 @@ const Example4 = () => {
     <div>
       <h1>example 4</h1>
       <p></p>
-      <div style={{ maxWidth: '200px', height: '300px' }}>
-        <LinesEllipsisTooltip
+      <div style={{ maxWidth: '400px'}}>
+        <LinesEllipsis
           text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac iaculis metus. Etiam egestas sagittis tincidunt. Nunc dictum sapien vel mauris ultrices bibendum. Integer volutpat eros ut purus auctor, et eleifend tellus consectetur. Maecenas iaculis nisi sed turpis ornare hendrerit. In vitae mauris quis ligula sodales luctus. Nullam sodales sodales nunc, eu facilisis nunc sodales nec. Etiam luctus sollicitudin mattis. Sed tempus erat vel dapibus molestie. Nulla aliquet vel ligula ut consequat. Suspendisse euismod lectus eu enim rhoncus dapibus. Vivamus consectetur feugiat nunc at tempus. Quisque imperdiet in dui malesuada egestas. Cras elementum odio id risus viverra viverra. Quisque interdum."
-          maxLine={3}
+          maxLine={5}
           basedOn="letters"
-          trimRight
           component="span"
         />
       </div>
