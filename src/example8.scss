@@ -1,0 +1,19 @@
+html,
+body {
+  background-color: papayawhip;
+  font-family: sans-serif;
+
+  .columnResizer {
+    background-color: red;
+    width: 6px;
+  }
+
+  td {
+    background-color: pink;
+  }
+
+  table {
+    width: 100%;
+    text-align: center;
+  }
+}
