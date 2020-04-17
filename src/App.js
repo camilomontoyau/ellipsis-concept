@@ -1,7 +1,9 @@
 import React from "react";
 import Container from "@material-ui/core/Container";
-import OldExamples from "./OldExamples";
 import { Route, Switch, Link } from 'react-router-dom';
+import OldExamples from "./OldExamples";
+import List from "./List";
+
 
 function App() {
   return (
@@ -13,6 +15,7 @@ function App() {
       <Container maxWidth="lg">
         <Switch>
           <Route path="/" component={OldExamples} />
+          <Route path="/list" component={List} />
         </Switch>
         <div style={{ minHeight: "500px" }}></div>
       </Container>
