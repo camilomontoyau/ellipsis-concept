@@ -14,7 +14,7 @@ function App() {
       </nav>
       <Container maxWidth="lg">
         <Switch>
-          <Route path="/" component={OldExamples} />
+          <Route exact path="/" component={OldExamples} />
           <Route path="/list" component={List} />
         </Switch>
         <div style={{ minHeight: "500px" }}></div>
