@@ -14,7 +14,7 @@ import Example10 from './examples/Example10';
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <Container maxWidth="lg">
         <Example1 />
         <Example2 />
