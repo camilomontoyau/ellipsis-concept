@@ -1,0 +1,10 @@
+.resize10 {
+  border: 1px solid black; 
+  overflow:auto;
+}
+.resize10.both {
+  resize: both;
+}
+.wrap {
+  max-width: 300px;
+}

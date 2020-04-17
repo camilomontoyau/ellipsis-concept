@@ -9,6 +9,7 @@ import Example6 from './Example6';
 import Example7 from './Example7';
 import Example8 from './Example8';
 import Example9 from './Example9';
+import Example10 from './Example10';
 
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
         <Example7 />
         <Example8 />
         <Example9 />
+        <Example10 />
         <div style={{minHeight:'500px'}}></div>
       </Container>
     </div>
