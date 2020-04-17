@@ -1,15 +1,15 @@
 import React from 'react';
 import Container from '@material-ui/core/Container';
-import Example1 from './Example1';
-import Example2 from './Example2';
-import Example3 from './Example3';
-import Example4 from './Example4';
-import Example5 from './Example5';
-import Example6 from './Example6';
-import Example7 from './Example7';
-import Example8 from './Example8';
-import Example9 from './Example9';
-import Example10 from './Example10';
+import Example1 from './examples/Example1';
+import Example2 from './examples/Example2';
+import Example3 from './examples/Example3';
+import Example4 from './examples/Example4';
+import Example5 from './examples/Example5';
+import Example6 from './examples/Example6';
+import Example7 from './examples/Example7';
+import Example8 from './examples/Example8';
+import Example9 from './examples/Example9';
+import Example10 from './examples/Example10';
 
 
 function App() {
