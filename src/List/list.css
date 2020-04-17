@@ -1,0 +1,10 @@
+.resize {
+  border: 1px solid black; 
+  overflow:auto;
+}
+.resize.both {
+  resize: horizontal;
+}
+.wrap {
+  max-width: 300px;
+}

@@ -1,21 +1,20 @@
 import React from "react";
 import Container from "@material-ui/core/Container";
-import { Route, Switch, Link } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 import OldExamples from "./OldExamples";
 import List from "./List";
+import Nav from "./Nav";
 
 
 function App() {
   return (
     <div>
-      <nav>
-      <Link to="/">Old Examples</Link>
-      <Link to="/list">List example</Link>
-      </nav>
+      <Nav />
       <Container maxWidth="lg">
         <Switch>
           <Route exact path="/" component={OldExamples} />
           <Route path="/list" component={List} />
+          <Route path="/list2" component={List} />
         </Switch>
         <div style={{ minHeight: "500px" }}></div>
       </Container>
