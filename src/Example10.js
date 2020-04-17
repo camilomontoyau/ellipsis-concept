@@ -25,7 +25,7 @@ const Example10 = () => {
     ref,
     onResize: _debounce(({ width }) => {
       setTruncatedTextWidth(width * 1.475);
-    }, 1000),
+    }, 500),
   });
 
   return (
