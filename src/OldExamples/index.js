@@ -12,7 +12,7 @@ import Example9 from './Example9';
 import Example10 from './Example10';
 
 
-function App() {
+function OldExamples() {
   return (
     <div>
       <Container maxWidth="lg">
@@ -32,4 +32,4 @@ function App() {
   );
 }
 
-export default App;
+export default OldExamples;
