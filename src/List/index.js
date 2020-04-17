@@ -8,26 +8,21 @@ const List = () => {
   const [cells, setCells] = useState(100);
   return (
     <Fragment>
+      <h1>1 observer per each cell</h1>
       <input
         type="number"
         onChange={(e) => setCells(e.target.value)}
         value={cells}
       />
-      <div className="resize10 both"></div>
       <table>
         <tbody>
-          <tr>
-            <td>empty</td>
-            <ColumnResizer className="columnResizer" minWidth={0} />
-            <td></td>
-          </tr>
           {_times(cells, () => (
             <tr>
-              <td>empty</td>
-              <td />
               <td>
                 <Cell />
               </td>
+              <ColumnResizer className="columnResizer" minWidth={0} />
+              <td />
             </tr>
           ))}
         </tbody>
