@@ -29,7 +29,7 @@ const Example10 = () => {
   });
 
   return (
-    <div className="wrap">
+    <div className="wrap" id="example10">
       <h1>example 10 (the best for parent resizing)</h1>
       <p>
         Using use-resize-observer, a hook library to implement ResizeObserver
