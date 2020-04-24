@@ -7,6 +7,7 @@ const Nav = () => (
     <Link to="/">Old Examples</Link>
     <Link to="/list">List example Observe per cell</Link>
     <Link to="/list2">List example Observe per cell</Link>
+    <Link to="/list3">Checking ... problems</Link>
   </nav>
 );
 

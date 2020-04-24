@@ -18,6 +18,7 @@
     "react-lines-ellipsis-with-tooltip": "^0.14.4",
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.4.1",
+    "react-split-pane": "^0.1.91",
     "react-truncate": "^2.4.0",
     "typeface-roboto": "0.0.75",
     "use-resize-observer": "^6.1.0-alpha.1"

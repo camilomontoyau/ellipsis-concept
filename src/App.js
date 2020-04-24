@@ -4,6 +4,7 @@ import { Route, Switch } from 'react-router-dom';
 import OldExamples from "./OldExamples";
 import List from "./List";
 import List2 from "./List2";
+import List3 from "./List3";
 import Nav from "./Nav";
 
 
@@ -16,6 +17,7 @@ function App() {
           <Route exact path="/" component={OldExamples} />
           <Route path="/list" component={List} />
           <Route path="/list2" component={List2} />
+          <Route path="/list3" component={List3} />
         </Switch>
         <div style={{ minHeight: "500px" }}></div>
       </Container>
