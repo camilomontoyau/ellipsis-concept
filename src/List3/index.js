@@ -1,6 +1,6 @@
 import React, { useState, Fragment, useRef } from "react";
 import _times from "lodash/times";
-import useResizeObserver from "use-resize-observer";
+import useResizeObserver from "use-resize-observer/polyfilled";
 import SplitPane from "react-split-pane";
 import _debounce from "lodash/debounce";
 import Cell from "./Cell";
