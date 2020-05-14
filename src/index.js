@@ -5,7 +5,6 @@ import "./index.css";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 import { BrowserRouter } from "react-router-dom";
-import ResizeObserver from 'resize-observer-polyfill';
 
 ReactDOM.render(
   <BrowserRouter>
