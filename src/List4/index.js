@@ -3,6 +3,7 @@ import _times from "lodash/times";
 import SplitPane from "react-split-pane";
 import _debounce from "lodash/debounce";
 import _get from "lodash/get";
+//import ResizeObserver from 'resize-observer-polyfill';
 import Cell from "./Cell";
 import "./list.css";
 
