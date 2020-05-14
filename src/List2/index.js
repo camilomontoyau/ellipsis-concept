@@ -1,7 +1,7 @@
 import React, { useState, Fragment, useRef } from "react";
 import _times from "lodash/times";
 import ColumnResizer from "react-column-resizer";
-import useResizeObserver from "use-resize-observer";
+import useResizeObserver from "use-resize-observer/polyfilled";
 import _debounce from "lodash/debounce";
 import Cell from "./Cell";
 import "./list.css";

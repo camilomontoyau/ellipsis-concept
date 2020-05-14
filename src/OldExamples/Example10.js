@@ -2,7 +2,7 @@ import React, { useRef, useState } from "react";
 import Button from "@material-ui/core/Button";
 import Tooltip from "@material-ui/core/Tooltip";
 import Truncate from "react-truncate";
-import useResizeObserver from "use-resize-observer";
+import useResizeObserver from "use-resize-observer/polyfilled";
 import "./example10.css";
 import _debounce from "lodash/debounce";
 
