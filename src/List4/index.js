@@ -2,6 +2,7 @@ import React, { Component, Fragment, createRef } from "react";
 import _times from "lodash/times";
 import SplitPane from "react-split-pane";
 import _debounce from "lodash/debounce";
+import _get from "lodash/get";
 import Cell from "./Cell";
 import "./list.css";
 
@@ -36,6 +37,18 @@ class List4 extends Component {
     styles: true,
   }
 
+  resizeObserver = null;
+
+  componentDidMount() {
+    this.setResizeObserver();
+  }
+
+  componentWillUnmount() {
+    if (this.resizeObserver && this.resizeObserver.disconnect) {
+      this.resizeObserver.disconnect();
+    }
+  }
+
   setCells = (value) => this.setState({cells: value}) 
   setDebounce = (value) => this.setState({debounce: value})
   setTruncatedTextWidth = (value) => this.setState({ truncatedTextWidth: value})
@@ -45,8 +58,23 @@ class List4 extends Component {
   setCorrection = (value) => this.setState({correction: value})
   setStyles = (value) => this.setState({ styles: value})
 
-
+  setResizeObserver() {
+    const {debounce, widthCorrection, correction} = this.state;
+    if (this.resizeObserver && this.resizeObserver instanceof ResizeObserver) {
+      return;
+    }
+    this.resizeObserver = new ResizeObserver(_debounce((entries) => {
+      const width = _get(entries, '0.contentRect.width', 0);
+      this.setRealWidth(width);
+      this.setTruncatedTextWidth(truncateWidth(width, widthCorrection, correction));
+    }, debounce));
+    if(this.ref && this.ref.current) {
+      this.resizeObserver.observe(this.ref.current);
+    }
+  }
+  
   ref = createRef()
+  
   render() {
     const {
       cells,
@@ -58,9 +86,22 @@ class List4 extends Component {
       correction,
       styles,
     } = this.state;
+
+    const {
+      setCells,
+      setDebounce,
+      setTruncatedTextWidth,
+      setRealWidth,
+      setLines,
+      setWidthCorrection,
+      setCorrection,
+      setStyles,
+      ref
+    } = this;
+
     return (
       <Fragment>
-        <h1>1 observer for all cells</h1>
+        <h1>Class component example</h1>
         <label htmlFor="cells">total cells</label>
         <input
           type="number"
