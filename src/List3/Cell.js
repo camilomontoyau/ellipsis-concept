@@ -33,7 +33,7 @@ const Cell = ({ truncatedTextWidth = 0, cell, lines = 1, styles = true }) => {
 
   return (
     <div style={{ width: "100%" }}>
-      <Tooltip arrow title={text} placement="right">
+      <Tooltip arrow title={`Help`} placement="right">
         <Button
           classes={{
             root: classes.container,
